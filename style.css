@@ -1,0 +1,400 @@
+/* Reset Page */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Console", Courier, monospace;
+}
+body {
+  background-color: var(--black);
+  color: var(--green);
+}
+:root {
+  --black: #000000;
+  --green: #2dfc52;
+  --greenLight: #2dfc536c;
+}
+
+/* Reset Page */
+
+/* SOMBRAS
+Borda projeto:
+  border: 10px double var(--green);
+  box-shadow: 10px 10px 6px var(--greenLight);
+*/
+
+/* Botão mobile */
+
+#btn-mobile {
+  display: none;
+}
+/* Botão mobile */
+/* Barra de navegação */
+nav {
+  margin: 0 10px 10px 10px;
+  padding: 10px;
+  top: 0;
+}
+#menu {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+}
+a:hover {
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+  color: var(--green);
+  font-size: 1.1em;
+  cursor: pointer;
+  padding: 0.5em;
+  margin: 0.5em;
+  padding-right: 1em;
+}
+.detail {
+  overflow: hidden;
+}
+/* Barra de navegação */
+/*Icone*/
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  margin-top: 10vh;
+  flex-direction: column;
+}
+
+/*Icone*/
+/* Seção Sobre mim */
+
+.grid-sobre {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1400px;
+  padding: 10em 10px 10em 10px;
+  margin: 0 auto;
+}
+.profile-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 2;
+}
+.profile-img img {
+  width: 60%;
+  border-radius: 50%;
+}
+.text-block {
+  order: 1;
+}
+.name {
+  margin: 0.2em;
+  font-size: 1.7em;
+  text-align: center;
+}
+.name:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.sub-title {
+  margin: 0.2em;
+  font-size: 1.5em;
+  text-align: center;
+}
+.sub-title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.title-text {
+  font-size: 1.5em;
+  width: 9em;
+  margin: 2em auto 1em auto;
+  text-decoration: underline;
+}
+.text {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 0.7em;
+}
+
+/* Seção Sobre mim */
+/* Seção de projetos */
+.title-project {
+  font-size: 1.7em;
+  width: 8em;
+  margin: 2em auto 1em auto;
+  cursor: pointer;
+  padding: 1em;
+  text-decoration: underline;
+}
+
+/* Seção de projetos */
+/* Secao Pokedex */
+
+.online-projects {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1400px;
+  padding: 10px;
+  margin: 5em auto 5em;
+  grid-template-areas: "pokedex calc";
+}
+.pokedex-title {
+  font-size: 2em;
+  text-shadow: 0px 0px 4px var(--green), 0px 0px 1px var(--green);
+  padding: 1em;
+}
+.pokedex {
+  grid-area: pokedex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 10px double var(--green);
+  box-shadow: 10px 10px 6px var(--greenLight);
+  width: 400px;
+  margin: 0 auto;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em auto 3em;
+}
+.search-container input {
+  width: 15em;
+  background-color: var(--black);
+  border: solid 2px var(--green);
+  height: 2em;
+  padding-left: 10px;
+  margin-right: 1em;
+  color: var(--green);
+}
+.search-container input:focus {
+  box-shadow: 5px 10px 3px var(--greenLight);
+  border: solid 2px var(--green);
+  outline: 0;
+}
+.btn-search {
+  width: 5em;
+  height: 2em;
+  background-color: var(--black);
+  border: 2px solid var(--green);
+  color: var(--green);
+}
+.btn-search:hover {
+  box-shadow: 5px 10px 3px var(--greenLight);
+  border: solid 2px var(--green);
+  outline: 0;
+}
+.pokemon-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.img-container img {
+  width: 12em;
+  filter: invert(100%);
+}
+.attributes-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em;
+  margin: 1em auto;
+}
+.attributes-content {
+  padding: 1em;
+  margin: 1em;
+}
+
+/* Secao Pokedex */
+/* Calculadora */
+.calculator {
+  grid-area: calc;
+  width: 18em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 10px 10px 6px var(--greenLight);
+  border: 10px double var(--green);
+  margin: 5em auto;
+}
+.title-calc {
+  margin: 0.5em;
+  padding: 0.5em;
+  font-size: 2em;
+  text-shadow: 0px 0px 4px var(--green), 0px 0px 1px var(--green);
+}
+.calculadora {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.textResult {
+  cursor: pointer;
+  color: var(--green);
+  margin: 0 7.5em 0 1em;
+  font-size: 1.2em;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#resultado {
+  font-size: 1.3em;
+  text-shadow: 2px 2px 3px var(--green);
+  margin: 0 auto;
+  height: 1.5em;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 10em;
+  text-align: end;
+}
+.button-calc {
+  border: none;
+  background-color: var(--black);
+  color: var(--green);
+  font-size: 1.5em;
+  margin: 0.6em;
+}
+.button-calc:hover {
+  text-shadow: 2px 2px 5px var(--green), 1px 1px 3px var(--green);
+}
+/* Calculadora */
+/* Responsividade Tablet/Smartphone */
+
+@media (max-width: 1250px) {
+  li {
+    margin-left: 0;
+  }
+
+  /* Menu Hamburguer */
+
+  #btn-mobile {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: var(--green);
+    display: flex;
+    font-size: 1.1em;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    display: block;
+    width: 20px;
+    border-top: 2px solid var(--green);
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  #menu {
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 0px;
+    transition: 0.6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: 200px;
+    visibility: visible;
+  }
+
+  /* Formantando imagem e bloco projeto */
+  .grid-sobre {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-img {
+    order: 1;
+    width: 80%;
+    margin-bottom: 1em;
+    margin: 0 auto;
+  }
+  /* Formatando texto */
+
+  .name {
+    font-size: 2em;
+  }
+  .sub-title {
+    font-size: 1.5em;
+  }
+  .title-text {
+    font-size: 1.5em;
+  }
+  .text {
+    font-size: 1.2em;
+  }
+  .title-project {
+    font-size: 1.5em;
+  }
+
+  /* Projetos */
+
+  .online-projects {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .icon {
+    font-size: 60%;
+  }
+  .profile-img img {
+    width: 80%;
+  }
+  .pokedex {
+    width: 19.5em;
+  }
+  .name {
+    font-size: 1.3em;
+  }
+  .sub-title {
+    font-size: 1em;
+  }
+  .title-text {
+    font-size: 1.1em;
+  }
+  .text {
+    font-size: 0.9em;
+  }
+  .title-project {
+    font-size: 1.4em;
+  }
+}
+/* Responsividade Tablet/Smartphone */
